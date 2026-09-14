@@ -2,44 +2,51 @@
 
 ### Software Engineer · Backend Architecture · Legacy Modernization
 
-I build and modernize business software with a strong focus on **Clean Architecture, transactional integrity, API design, automated verification, and maintainable delivery workflows**.
+I design and modernize business software with a focus on **Clean Architecture, transactional integrity, API contracts, automated verification, and maintainable delivery workflows**.
 
-My recent work spans **.NET/C#**, **TypeScript/Node.js**, **React**, **PHP/WordPress**, **PostgreSQL**, and **MySQL**, with projects structured as engineering case studies rather than isolated code samples.
+My strongest work sits at the intersection of backend engineering and system modernization: taking complex business flows, defining explicit boundaries, moving authority to the right layer, integrating real persistence, and proving behavior through tests, CI, and governed releases.
 
----
-
-## Featured release
-
-### 🛡️ Insurance Claims Legacy Modernization — v0.2.0
-**TypeScript · NestJS · React · PostgreSQL · Clean Architecture + Ports & Adapters**
-
-A governed modernization case study showing how a new claims experience can evolve while remaining decoupled from a simulated legacy dependency.
-
-Current release highlights:
-
-- published **Claims Operations Experience v0.2.0**;
-- operations Dashboard, Claims Workspace, Claim Detail and Tasks Workspace;
-- real `ClaimTask` lifecycle, Claim Timeline and Evidence Attention projections;
-- explicit separation between task completion and authoritative Claim lifecycle transitions;
-- `api-v1-r2`: **15 effective operations**, composed as 10 immutable base operations + 5 additive operations;
-- PostgreSQL-backed authoritative modern workflow;
-- separate REST and read-only MCP presentation boundaries;
-- fresh Chrome 152 desktop/mobile review with 12 committed screenshots;
-- human-governed release publication with preserved historical MVP evidence.
-
-➡️ [Explore the repository](https://github.com/LuisHdezE/InsuranceClaims)  
-🏷️ [View the published v0.2.0 release](https://github.com/LuisHdezE/InsuranceClaims/releases/tag/v0.2.0)
+**Based in Uruguay · Open to backend / software engineering opportunities**
 
 ---
 
-## What I focus on
+## Flagship case study
 
-- **Backend & API engineering** with explicit Domain, Application and Infrastructure boundaries
+### 🛡️ Insurance Claims Legacy Modernization — v0.3.0
+**TypeScript · NestJS 12 · React 19 · PostgreSQL 18 · Clean Architecture + Ports & Adapters**
+
+A full insurance-claims modernization case study built as a governed greenfield product with simulated legacy coexistence.
+
+The project demonstrates not only application code, but the complete engineering path from requirements and architecture through API evolution, browser integration, provider-real QA, release governance, and technical case-study packaging.
+
+**R3 at a glance**
+
+- **90 REST operations** across **76 paths** and **16 operation families**;
+- **22 productized web surfaces** across public, operator, customer, policy, financial, administration, analytics, import and recovery journeys;
+- deterministic runtime reconciliation at **90/90**;
+- OpenAPI zero drift and Postman semantic coverage at **90/90**;
+- PostgreSQL 18 provider-real API and integration QA;
+- JWT authentication, API-side RBAC, Argon2id, idempotency, concurrency protection, RFC 9457 Problem Details, durable audit correlation and rate limiting;
+- browser responsive/accessibility journeys plus offline/degraded behavior;
+- governed release publication with an annotated **v0.3.0** tag and preserved historical evidence.
+
+The repository is intentionally explicit about what is implemented, what is simulated, what is excluded, and what evidence supports each claim.
+
+➡️ [Explore InsuranceClaims](https://github.com/LuisHdezE/InsuranceClaims)  
+🏷️ [Published v0.3.0 release](https://github.com/LuisHdezE/InsuranceClaims/releases/tag/v0.3.0)  
+📘 [Read the R3 case study](https://github.com/LuisHdezE/InsuranceClaims/blob/main/documentation/portfolio/CASE_STUDY.md)
+
+---
+
+## Engineering focus
+
+- **Backend & API engineering** with explicit Domain, Application, Infrastructure and Presentation boundaries
 - **Clean Architecture + Ports & Adapters**
 - **Legacy modernization** through controlled coexistence and replaceable adapters
-- **Transactional workflows**, idempotency, concurrency control, audit and outbox patterns
-- **Contract-first APIs**, OpenAPI, integration testing and CI evidence
-- **Frontend integration** with React and business-facing interfaces
+- **Transactional workflows**, rollback guarantees, idempotency, concurrency control, audit and outbox patterns
+- **Contract-first APIs** with OpenAPI, runtime reconciliation and integration testing
+- **Relational persistence** with PostgreSQL and MySQL
+- **Frontend integration** with React and API-authoritative business behavior
 - **Evidence-driven delivery** where architecture, QA, limitations and release state are visible in the repository
 
 ---
@@ -47,18 +54,18 @@ Current release highlights:
 ## Selected work
 
 ### 🧾 eFactura
-**C# · .NET 10 · PostgreSQL · MySQL · Clean Architecture**
+**C# · .NET 10 · ASP.NET Core · PostgreSQL · MySQL · Clean Architecture**
 
-A modernization effort around an electronic-invoicing and transactional-sales platform for Uruguay.
+A governed brownfield modernization of an electronic-invoicing and transactional-sales platform for Uruguay.
 
-Engineering themes include:
+Current engineering evidence includes:
 
-- explicit Domain, Application, Infrastructure and Web API boundaries;
-- PostgreSQL/MySQL persistence verification;
-- Sales, Inventory, CAE and Finance foundations;
-- fiscal-calculation boundaries;
-- idempotency, audit, outbox, optimistic concurrency and transactional rollback guarantees;
-- unfinished external signing/provider transport kept clearly separated from implemented capabilities.
+- incremental migration toward explicit Domain, Application, Infrastructure and Web API boundaries;
+- provider-neutral EF Core write paths validated against PostgreSQL 16 and MySQL 8.4;
+- Sales, Catalog, Inventory, CAE/fiscal numbering and Finance foundations;
+- idempotency, audit, outbox, optimistic/unique concurrency and transactional rollback guarantees;
+- **264 / 264 represented automated tests PASS** at the accepted transaction-foundation checkpoint;
+- explicit separation between implemented local fiscal foundations and later external signing/provider transport.
 
 ➡️ [Explore eFactura](https://github.com/LuisHdezE/efactura)
 
@@ -67,31 +74,43 @@ Engineering themes include:
 ### 🛒 ZoFloridane
 **PHP · WordPress · WooCommerce · JavaScript · UI/UX modernization**
 
-A real-world storefront modernization focused on improving a WordPress/WooCommerce purchasing experience while preserving existing business behavior.
+A real-world storefront modernization focused on improving an existing WordPress/WooCommerce purchasing experience without casually replacing working business behavior.
 
-Engineering themes include:
+The repository documents:
 
-- mobile-first UI/UX redesign;
-- custom storefront work around an existing WordPress architecture;
+- mobile-first UI/UX modernization;
+- existing custom-plugin and child-theme boundaries;
 - cart, locality, delivery and Zelle-oriented purchase flows;
-- repository boundaries that exclude production credentials and customer/order data;
-- Git-based workflow with local validation before deployment.
+- repository isolation from production credentials, customer data, order exports and database dumps;
+- Git-based delivery with local functional validation before deployment.
 
 ➡️ [Explore ZoFloridane](https://github.com/LuisHdezE/ZoFloridane)
 
 ---
 
-## Engineering principles
+### 📱 KMP Zero-Cost Lab
+**Kotlin Multiplatform · Compose Multiplatform · Android · iOS · GitHub Actions**
+
+A reference pilot exploring a **USD 0 development workflow** for Android and iOS from Windows/WSL without a locally owned Mac.
+
+The pilot is intentionally phased. Its current build-baseline work isolates Android/iOS toolchain validation before Room/SQLite persistence is introduced.
+
+➡️ [Explore KMP Zero-Cost Lab](https://github.com/LuisHdezE/KMP-Zero-Cost-Lab)
+
+---
+
+## How I work
 
 ```text
-Domain rules belong in the domain.
-Infrastructure is replaceable.
-External systems sit behind ports.
-The client does not become the source of truth.
-Critical writes are transactional.
-Retries must be safe.
-Tests should prove boundaries, not only happy paths.
-CI evidence matters.
+Understand the domain before coding.
+Keep business authority out of controllers and clients.
+Put external systems behind replaceable ports.
+Make critical writes transactional.
+Make retries safe.
+Treat architecture boundaries as executable constraints where practical.
+Test negative paths, not only happy paths.
+Keep CI evidence tied to the exact reviewed commit.
+State limitations as clearly as capabilities.
 ```
 
 ---
@@ -99,41 +118,35 @@ CI evidence matters.
 ## Core technologies
 
 **Backend**  
-`C#` · `.NET` · `TypeScript` · `Node.js` · `NestJS` · `PHP`
+`C#` · `.NET` · `ASP.NET Core` · `TypeScript` · `Node.js` · `NestJS` · `PHP`
 
-**Frontend**  
-`React` · `TypeScript` · `JavaScript` · `WordPress` · `WooCommerce`
+**Frontend / client**  
+`React` · `TypeScript` · `JavaScript` · `Kotlin` · `Compose Multiplatform` · `WordPress` · `WooCommerce`
 
 **Data**  
-`PostgreSQL` · `MySQL` · `Entity Framework Core` · `Prisma`
+`PostgreSQL` · `MySQL` · `SQLite` · `Entity Framework Core` · `Prisma`
 
 **Architecture & delivery**  
-`Clean Architecture` · `Ports & Adapters` · `REST` · `OpenAPI` · `CI/CD` · `GitHub Actions` · `Automated Testing`
+`Clean Architecture` · `Ports & Adapters` · `REST` · `OpenAPI` · `CI/CD` · `GitHub Actions` · `Automated Testing` · `Release Governance`
 
 ---
 
-## How I present engineering work
+## What I want a repository to prove
 
-I am packaging my strongest projects as reproducible case studies with:
+A strong engineering repository should make four things obvious without requiring a private explanation:
 
-- clear problem framing;
-- explicit architecture decisions and boundaries;
-- implementation and API evidence;
-- CI and QA results;
-- screenshots and runnable verification paths;
-- honest limitations and non-claims;
-- governed release history where appropriate.
+1. **What problem is being solved?**
+2. **Where does business authority live?**
+3. **What has actually been verified?**
+4. **What has deliberately not been claimed?**
 
-The goal is simple: when someone opens a repository, they should quickly understand **what problem was solved, how the system is structured, what has been proven, and what has deliberately not been claimed**.
+That is how I am packaging my current work: as reproducible engineering case studies rather than isolated code samples.
 
 ---
 
 ## Contact
 
-GitHub: [@LuisHdezE](https://github.com/LuisHdezE)
-
-Portfolio website: **EliasWorks refresh in progress**
-
----
+GitHub: [@LuisHdezE](https://github.com/LuisHdezE)  
+Portfolio: **eliaswork.uy — refresh in progress**
 
 <sub>Portfolio claims are intentionally bounded to capabilities already implemented and evidenced in the referenced repositories.</sub>
