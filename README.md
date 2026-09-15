@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-banner.jpg" alt="Luis A. Hernández Elias · Software Developer · Backend & APIs · Legacy Modernization" width="100%" />
+  <img src="./assets/profile-banner.svg" alt="Luis A. Hernández Elias · Software Developer · Backend & APIs · Legacy Modernization" width="100%" />
 </p>
 
 <p align="center">
