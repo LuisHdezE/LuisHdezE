@@ -1,16 +1,12 @@
-<div align="center">
+<p align="center">
+  <img src="./assets/profile-banner.svg" alt="Luis A. Hernández Elias · Software Developer · Backend & APIs · Legacy Modernization" width="100%" />
+</p>
 
-# Luis A. Hernández Elias
-
-### Software Developer · Backend & APIs · Legacy Modernization
-
-**.NET · Laravel · TypeScript/NestJS · Kotlin · React · Clean Architecture**
-
-Based in Uruguay · Building and modernizing software for real business workflows
-
-[Portfolio](https://eliasworks.uy/) · [Selected projects](https://eliasworks.uy/proyectos) · [Contact](mailto:luisitohe@gmail.com)
-
-</div>
+<p align="center">
+  <a href="https://eliasworks.uy/">Portfolio</a> ·
+  <a href="https://eliasworks.uy/proyectos">Selected projects</a> ·
+  <a href="mailto:luisitohe@gmail.com">Contact</a>
+</p>
 
 ---
 
